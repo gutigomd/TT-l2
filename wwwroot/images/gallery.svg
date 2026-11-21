@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320">
+  <rect width="600" height="320" fill="#553c9a"/>
+  <rect x="40" y="50" width="520" height="220" rx="14" fill="#6b46c1"/>
+  <text x="300" y="155" font-family="Arial" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">ГАЛЕРЕЯ ГОТЕЛЮ</text>
+  <text x="300" y="195" font-family="Arial" font-size="18" fill="#e9d8fd" text-anchor="middle">Панорамний басейн • Тераса з видом на море</text>
+</svg>

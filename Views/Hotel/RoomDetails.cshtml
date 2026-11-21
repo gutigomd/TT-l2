@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Детальний опис номера";
+}
+
+<div class="container py-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Головна (Готель)</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@ViewData["RoomTitle"]</li>
+        </ol>
+    </nav>
+
+    <div class="card shadow-sm border-0">
+        <div class="row g-0 align-items-center">
+            <div class="col-md-5">
+                <img src="~/images/rooms.svg" class="img-fluid rounded-start w-100" alt="Номер готелю">
+            </div>
+            <div class="col-md-7">
+                <div class="card-body p-4">
+                    <span class="badge bg-primary mb-2">Варіант 15 — Готель «Одеса Плаза»</span>
+                    <h2 class="card-title fw-bold">@ViewData["RoomTitle"]</h2>
+                    <p class="card-text text-muted">
+                        Просторий двокімнатний номер площею 52 м² з панорамним видом на узбережжя, окремою вітальнею,
+                        робочою зоною та власною терасою.
+                    </p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item"><strong>Місткість:</strong> до 3 гостей (ліжко King-Size + диван)</li>
+                        <li class="list-group-item"><strong>Зручності:</strong> Wi-Fi 1 Гбіт/с, клімат-контроль, Smart TV, міні-бар, сейф</li>
+                        <li class="list-group-item"><strong>Харчування:</strong> сніданок «шведський стіл» включено у вартість</li>
+                        <li class="list-group-item"><strong>Вартість проживання:</strong> 3 800 грн / доба</li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary">← Повернутися на головну</a>
+                        <a asp-controller="Resolve" asp-action="Index" class="btn btn-success">Перейти до сторінки бронювання (Resolve)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

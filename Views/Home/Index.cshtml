@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Готель «Одеса Плаза» — Головна";
+}
+
+<div class="container py-4">
+    <div class="p-4 mb-4 bg-dark text-white rounded-3 shadow-sm">
+        <div class="container-fluid py-2">
+            <h1 class="display-6 fw-bold">Готель «Одеса Плаза»</h1>
+            <p class="col-md-9 fs-5">
+                Сучасний готельний комплекс на узбережжі Чорного моря. Комфортабельні номери,
+                SPA-центр, ресторан авторської кухні та цілодобовий сервіс.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+                <a asp-controller="Hotel" asp-action="RoomDetails" asp-route-roomType="Люкс «Панорама»" class="btn btn-warning fw-semibold">
+                    Детальний опис номера (HotelController)
+                </a>
+                <a asp-controller="Resolve" asp-action="Index" class="btn btn-outline-light">
+                    Сторінка ResolveController
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- Блок 1: Типи номерів -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/rooms.svg" class="card-img-top" alt="Типи номерів">
+                <div class="card-body d-flex flex-column">
+                    <h4 class="card-title fw-bold">1. Типи номерів</h4>
+                    <p class="card-text">
+                        До послуг гостей 65 номерів різних категорій: затишний «Стандарт», просторий «Напівлюкс»
+                        та двокімнатний «Люкс Панорама» з видом на море.
+                    </p>
+                    <div class="mt-auto">
+                        <a asp-controller="Hotel" asp-action="RoomDetails" asp-route-roomType="Люкс «Панорама»" class="btn btn-primary">
+                            Переглянути опис номера →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 2: Послуги -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/services.svg" class="card-img-top" alt="Послуги готелю">
+                <div class="card-body d-flex flex-column">
+                    <h4 class="card-title fw-bold">2. Послуги готелю</h4>
+                    <p class="card-text">
+                        У вартість проживання входить відвідування басейну та фітнес-зали. Додатково доступні
+                        SPA-процедури, ресторан, конференц-зал на 120 місць і трансфер з вокзалу.
+                    </p>
+                    <div class="mt-auto">
+                        <a asp-controller="Hotel" asp-action="RoomDetails" asp-route-roomType="Напівлюкс + SPA" class="btn btn-outline-primary">
+                            Детальніше про пакет послуг
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 3: Галерея -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/gallery.svg" class="card-img-top" alt="Галерея">
+                <div class="card-body d-flex flex-column">
+                    <h4 class="card-title fw-bold">3. Галерея та інтер’єри</h4>
+                    <p class="card-text">
+                        Дизайнерські інтер’єри виконані у світлих морських тонах із використанням натуральних матеріалів.
+                        На даху розташована відкрита лаунж-тераса.
+                    </p>
+                    <div class="mt-auto">
+                        <a asp-controller="Hotel" asp-action="RoomDetails" asp-route-roomType="Стандарт Морський" class="btn btn-outline-primary">
+                            Оглянути інтер’єр номера
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 4: Бронювання -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/booking.svg" class="card-img-top" alt="Бронювання">
+                <div class="card-body d-flex flex-column">
+                    <h4 class="card-title fw-bold">4. Бронювання та контакти</h4>
+                    <p class="card-text">
+                        Швидке онлайн-бронювання без передоплати та безкоштовне скасування за 24 години до заїзду.
+                        Адреса: м. Одеса, Французький бульвар, 45.
+                    </p>
+                    <div class="mt-auto">
+                        <a asp-controller="Resolve" asp-action="Index" class="btn btn-success">
+                            Перейти до бронювання →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
